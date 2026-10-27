@@ -6,6 +6,12 @@ PythonでROSデータを受信し、同一ネットワークのPC・iPadのブ�
 開発者自身がコードを理解しながら段階的に実装する方針です。
 HTML・CSS・JavaScriptとPython / FastAPI / rclpyの構成を維持します。
 
+## 画面
+
+開発中のダッシュボードです。画像はサーバー接続済み・ROSデータ受信途絶時の画面です。
+
+![ROS 2監視ダッシュボード](docs/images/dashboard.png)
+
 ## 現在の機能
 
 - `/pcl_pose` のX・Y表示とローカル座標での走行軌跡
@@ -24,6 +30,7 @@ Topic一覧での選択は名前と型の確認のみで、各パネルの購読
 main.py           ROS購読・FastAPI・WebSocket・CSV保存
 index.html        画面・CSS・JavaScript・Canvas描画
 requirements.txt  Pythonの直接依存バージョン
+docs/images/      README用のスクリーンショット
 records/          実行時に生成する座標記録（Git管理対象外）
 ```
 
